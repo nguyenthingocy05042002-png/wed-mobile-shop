@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Shop - khuyến mãi</title>
+    <link rel="stylesheet" href="css/khuyen-mai.css">
+
+    <style>
+        /*===== CSS Dùng chung cho tất cả các trang =====*/
+
+        /* 1. Thiết kế chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: #ffffff;
+
+        }
+
+        .clear {
+            clear: both;
+
+        }
+
+        /* 2. Header - Menu */
+
+        .header {
+            background-color: #2c3e50;
+            padding: 20px;
+
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo a {
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+            ;
+        }
+
+        .menu {
+            float: right;
+            list-style: none;
+            margin-left: 15px;
+        }
+
+        .menu li {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .menu li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+
+        }
+
+        .menu li a:hover {
+            color: #f39c12;
+
+        }
+
+        /* 3.Tiêu đề trang con */
+
+        .page-title {
+            background-color: #f39c12;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+
+        }
+
+        .page-title h2 {
+            font-size: 30px;
+
+        }
+
+        .page-title a {
+            color: #ffffff;
+
+        }
+
+        /* 4.Khối nội dung và tiêu đề khối */
+
+        .section {
+
+            padding: 30px 0;
+
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 26px;
+            margin-bottom: 20px;
+
+        }
+
+        /* 5.Nút bấm dùng chung */
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #ffffff;
+            padding: 8px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+
+        }
+
+        /* 6. Footer */
+        .footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        /* ===== CSS RIÊNG CHO TRANG CHỦ =====*/
+
+        /* Banner */
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Lời chào */
+
+        .intro {
+            text-align: center;
+            padding: 30px 60px 0 60px;
+        }
+
+        .intro h2 {
+            color: #2c3e50;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        /* Thẻ giới thiệu các trang con */
+
+        .card {
+            float: left;
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 80px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin: 10px 0 5px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            height: 46px;
+            margin-bottom: 10px;
+        }
+
+        /* ===== CSS RIÊNG CHO TRANG KHUYẾN MÃI ===== */
+        /* Thẻ chương trình khuyến mãi */
+        .promo {
+            float: left;
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #dddddd;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .promo img {
+            width: 100%;
+        }
+
+        .promo h3 {
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+
+        .promo p {
+            color: #777777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* Nhãn tròn ở góc trên bên phải */
+        .promo-tag {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            background-color: #f39c12;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Hộp mã giảm giá */
+        .coupon {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 3px dashed #e74c3c;
+            background-color: #fdf2f0;
+            text-align: center;
+        }
+
+        .code {
+            font-size: 32px;
+            font-weight: bold;
+            color: #e74c3c;
+            letter-spacing: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- ===== HEADER (giống nhau ở mọi trang) ===== -->
+        <div class="header">
+            <h1 class="logo"><a href="index.html">Mobile Shop</a></h1>
+            <ul class="menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="san-pham.html">Sản phẩm</a></li>
+                <li><a href="khuyen-mai.html">Khuyến mãi</a></li>
+                <li><a href="tin-tuc.html">Tin tức</a></li>
+                <li><a href="doi-ngu.html">Đội ngũ</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <!-- ===== TIÊU ĐỀ TRANG ===== -->
+        <div class="page-title">
+            <h2>Khuyến mãi</h2>
+            <p><a href="index.html">Trang chủ</a> / Khuyến mãi</p>
+        </div>
+        <!-- ===== CHƯƠNG TRÌNH KHUYẾN MÃI ===== -->
+        <div class="section">
+            <h2 class="section-title">Chương trình đang diễn ra</h2>
+            <div class="promo">
+                <span class="promo-tag">-30%</span>
+                <img src="images/km1.png" alt="Tuần lễ điện thoại">
+                <h3>Tuần lễ điện thoại</h3>
+                <p>Từ 01/11 đến 30/11/2026</p>
+                <a href="#" class="btn">Xem chi tiết</a>
+            </div>
+
+            <div class="promo">
+                <span class="promo-tag">0%</span>
+                <img src="images/km2.png" alt="Trả góp 0% lãi suất">
+                <h3>Trả góp 0% lãi suất</h3>
+                <p>Áp dụng cho đơn từ 3 triệu</p>
+                <a href="#" class="btn">Xem chi tiết</a>
+            </div>
+            <div class="promo">
+                <span class="promo-tag">FREE</span>
+                <img src="images/km3.png" alt="Quà tặng kèm">
+                <h3>Quà tặng kèm</h3>
+                <p>Tai nghe và ốp lưng miễn phí</p>
+                <a href="#" class="btn">Xem chi tiết</a>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <!-- ===== MÃ GIẢM GIÁ ===== -->
+
+        <div class="section">
+            <div class="coupon">
+                <p>Nhập mã giảm giá khi thanh toán</p>
+                <p class="code">MOBILE2026</p>
+                <p>Giảm thêm 200.000 đ cho đơn hàng từ 3.000.000 đ</p>
+            </div>
+        </div>
+
+        <!-- ===== FOOTER (giống nhau ở mọi trang) ===== -->
+        <div class="footer">
+            <p>&copy; 2026 Mobile Shop. Địa chỉ: 123 Đường ABC, Quận 1, TP. Hồ Chí
+
+                Minh</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

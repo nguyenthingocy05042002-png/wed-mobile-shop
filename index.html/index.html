@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Shop - Trang chủ</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        /*===== CSS Dùng chung cho tất cả các trang =====*/
+
+        /* 1. Thiết kế chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: #ffffff;
+
+        }
+
+        .clear {
+            clear: both;
+
+        }
+
+        /* 2. Header - Menu */
+
+        .header {
+            background-color: #2c3e50;
+            padding: 20px;
+
+        }
+
+        .logo {
+            float: left;
+
+        }
+
+        .logo a {
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+            ;
+        }
+
+        .menu {
+            float: right;
+            list-style: none;
+            margin-left: 15px;
+
+        }
+
+        .menu li {
+            float: left;
+            margin-left: 20px;
+
+        }
+
+        .menu li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+
+        }
+
+        .menu li a:hover {
+            color: #f39c12;
+
+        }
+
+        /* 3.Tiêu đề trang con */
+
+        .page-title {
+            background-color: #f39c12;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+
+        }
+
+        .page-title h2 {
+            font-size: 30px;
+
+        }
+
+        .page-title a {
+            color: #ffffff;
+
+        }
+
+        /* 4.Khối nội dung và tiêu đề khối */
+
+        .section {
+
+            padding: 30px 0;
+
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 26px;
+            margin-bottom: 20px;
+
+        }
+
+        /* 5.Nút bấm dùng chung */
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #ffffff;
+            padding: 8px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+
+        }
+
+        /* 6. Footer */
+        .footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        /* ===== CSS RIÊNG CHO TRANG CHỦ =====*/
+
+        /* Banner */
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Lời chào */
+
+        .intro {
+            text-align: center;
+            padding: 30px 60px 0 60px;
+        }
+
+        .intro h2 {
+            color: #2c3e50;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        /* Thẻ giới thiệu các trang con */
+
+        .card {
+            float: left;
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .card img {
+            width: 80px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin: 10px 0 5px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            height: 46px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- ===== HEADER (giống nhau ở mọi trang) ===== -->
+        <div class="header">
+            <h1 class="logo"><a href="index.html">Mobile Shop</a></h1>
+            <ul class="menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="san-pham.html">Sản phẩm</a></li>
+                <li><a href="khuyen-mai.html">Khuyến mãi</a></li>
+                <li><a href="tin-tuc.html">Tin tức</a></li>
+                <li><a href="doi-ngu.html">Đội ngũ</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <!-- ===== BANNER ===== -->
+        <div class="banner">
+            <img src="images/banner.png" alt="Mobile Shop banner">
+        </div>
+        <!-- ===== LỜI CHÀO ===== -->
+        <div class="intro">
+            <h2>Chào mừng bạn đến với Mobile Shop</h2>
+            <p>Mobile Shop chuyên cung cấp điện thoại chính hãng với giá tốt nhất.
+                Hãy khám phá website của chúng tôi qua các mục bên dưới.</p>
+        </div>
+        <!-- ===== CÁC MỤC CỦA WEBSITE ===== -->
+        <div class="section">
+            <h2 class="section-title">Khám phá website</h2>
+            <div class="card">
+                <img src="images/icon-gioi-thieu.png" alt="Giới thiệu">
+                <p>Câu chuyện và giá trị cốt lõi của Mobile Shop.</p>
+                <a href="gioi-thieu.html" class="btn">Xem thêm</a>
+            </div>
+            <h3>Giới thiệu</h3>.
+            <div class="card">
+                <img src="images/icon-san-pham.png" alt="Sản phẩm">
+                <h3>Sản phẩm</h3>
+                <p>Các mẫu điện thoại mới nhất, giá tốt nhất.</p>
+                <a href="san-pham.html" class="btn">Xem thêm</a>
+            </div>
+
+            <div class="card">
+                <img src="images/icon-khuyen-mai.png" alt="Khuyến mãi">
+                <h3>Khuyến mãi</h3>
+                <p>Chương trình giảm giá và quà tặng hấp dẫn.</p>
+                <a href="khuyen-mai.html" class="btn">Xem thêm</a>
+            </div>
+
+            <div class="card">
+                <img src="images/icon-tin-tuc.png" alt="Tin tức">
+                <h3>Tin tức</h3>
+                <p>Tin công nghệ và mẹo dùng điện thoại.</p>
+                <a href="tin-tuc.html" class="btn">Xem thêm</a>
+            </div>
+
+            <div class="card">
+                <img src="images/icon-doi-ngu.png" alt="Đội ngũ">
+                <h3>Đội ngũ</h3>
+                <p>Những người luôn sẵn sàng hỗ trợ bạn.</p>
+                <a href="doi-ngu.html" class="btn">Xem thêm</a>
+            </div>
+
+            <div class="card">
+                <img src="images/icon-lien-he.png" alt="Liên hệ">
+                <h3>Liên hệ</h3>
+                <p>Địa chỉ, số điện thoại và form liên hệ.</p>
+                <a href="lien-he.html" class="btn">Xem thêm</a>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <!-- ===== FOOTER (giống nhau ở mọi trang) ===== -->
+        <div class="footer">
+            <p>&copy; 2026 Mobile Shop. Địa chỉ: 123 Đường ABC, Quận 1, TP. Hồ Chí
+
+                Minh</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
