@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Shop - Trang chủ</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        /*===== CSS Dùng chung cho tất cả các trang =====*/
+
+        /* 1. Thiết kế chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: #ffffff;
+
+        }
+
+        .clear {
+            clear: both;
+
+        }
+
+        /* 2. Header - Menu */
+
+        .header {
+            background-color: #2c3e50;
+            padding: 20px;
+
+        }
+
+        .logo {
+            float: left;
+
+        }
+
+        .logo a {
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+            ;
+        }
+
+        .menu {
+            float: right;
+            list-style: none;
+            margin-left: 15px;
+
+        }
+
+        .menu li {
+            float: left;
+            margin-left: 20px;
+
+        }
+
+        .menu li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+
+        }
+
+        .menu li a:hover {
+            color: #f39c12;
+
+        }
+
+        /* 3.Tiêu đề trang con */
+
+        .page-title {
+            background-color: #f39c12;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+
+        }
+
+        .page-title h2 {
+            font-size: 30px;
+
+        }
+
+        .page-title a {
+            color: #ffffff;
+
+        }
+
+        /* 4.Khối nội dung và tiêu đề khối */
+
+        .section {
+
+            padding: 30px 0;
+
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 26px;
+            margin-bottom: 20px;
+
+        }
+
+        /* 5.Nút bấm dùng chung */
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #ffffff;
+            padding: 8px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+
+        }
+
+        /* 6. Footer */
+        .footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        /* ===== CSS RIÊNG CHO TRANG CHỦ =====*/
+
+        /* Banner */
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Lời chào */
+
+        .intro {
+            text-align: center;
+            padding: 30px 60px 0 60px;
+        }
+
+        .intro h2 {
+            color: #2c3e50;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        /* Thẻ giới thiệu các trang con */
+
+        .card {
+            float: left;
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .card img {
+            width: 80px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin: 10px 0 5px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            height: 46px;
+            margin-bottom: 10px;
+        }
+
+        /* ===== CSS RIÊNG CHO TRANG ĐỘI NGŨ ===== */
+        .team-intro {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Dùng inline-block thay cho float */
+        .team {
+            text-align: center;
+        }
+
+        .member {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        /* Ảnh đại diện hình tròn */
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #f39c12;
+        }
+
+        .member h3 {
+            color: #2c3e50;
+            font-size: 18px;
+        }
+
+        .role {
+            color: #999999;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- ===== HEADER (giống nhau ở mọi trang) ===== -->
+        <div class="header">
+            <h1 class="logo"><a href="index.html">Mobile Shop</a></h1>
+            <ul class="menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="san-pham.html">Sản phẩm</a></li>
+                <li><a href="khuyen-mai.html">Khuyến mãi</a></li>
+                <li><a href="tin-tuc.html">Tin tức</a></li>
+                <li><a href="doi-ngu.html">Đội ngũ</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <!-- ===== TIÊU ĐỀ TRANG ===== -->
+        <div class="page-title">
+            <h2>Đội ngũ</h2>
+
+            <p><a href="index.html">Trang chủ</a> / Đội ngũ</p>
+        </div>
+        <!-- ===== ĐỘI NGŨ ===== -->
+        <div class="section">
+            <h2 class="section-title">Đội ngũ của chúng tôi</h2>
+            <p class="team-intro">Những thành viên luôn sẵn sàng hỗ trợ bạn chọn được
+
+                chiếc điện thoại ưng ý nhất.</p>
+            <div class="team">
+                <div class="member">
+                    <img src="images/nv1.png" alt="Nguyễn Văn An">
+                    <h3>Nguyễn Văn An</h3>
+                    <p class="role">Quản lý cửa hàng</p>
+                </div>
+
+                <div class="member">
+                    <img src="images/nv2.png" alt="Trần Thị Bình">
+                    <h3>Trần Thị Bình</h3>
+                    <p class="role">Nhân viên tư vấn</p>
+                </div>
+                <div class="member">
+                    <img src="images/nv3.png" alt="Lê Minh Cường">
+                    <h3>Lê Minh Cường</h3>
+                    <p class="role">Kỹ thuật viên</p>
+                </div>
+
+                <div class="member">
+                    <img src="images/nv4.png" alt="Phạm Thu Dung">
+                    <h3>Phạm Thu Dung</h3>
+                    <p class="role">Chăm sóc khách hàng</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- ===== FOOTER (giống nhau ở mọi trang) ===== -->
+        <div class="footer">
+            <p>&copy; 2026 Mobile Shop. Địa chỉ: 123 Đường ABC, Quận 1, TP. Hồ Chí
+
+                Minh</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
